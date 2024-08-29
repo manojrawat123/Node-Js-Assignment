@@ -11,7 +11,6 @@ const userSignByJwt = (object, options = null)=>{
 
 const userDecodeByJwt = (token)=>{
     try {
-        
         const decode = jwt.verify(token, configurations.private_key);
         return {
             expired : false,
